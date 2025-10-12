@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <title>Abonnement aanvragen</title>
+</head>
+<body>
+  <h1>Je abonnement binnen 5 minuten geregeld</h1>
+
+  <form action="#" method="post" autocomplete="on" novalidate>
+    <fieldset>
+      <legend>Persoonsgegevens</legend>
+
+      <label for="voornaam">Voornaam</label><br />
+      <input
+        id="voornaam"
+        name="voornaam"
+        type="text"
+        required
+        maxlength="50"
+        pattern="^[^\d]+$"
+        title="Voornaam mag geen cijfers"
+        placeholder="Voornaam"
+      />
+      <br /><br />
+
+      <label for="achternaam">Achternaam</label><br />
+      <input
+        id="achternaam"
+        name="achternaam"
+        type="text"
+        required
+        maxlength="50"
+        pattern="^[^\d]+$"
+        title="Achternaam geen cijfers"
+        placeholder="Achternaam"
+      />
+      <br /><br />
+
+      <label>Aanhef</label><br />
+      <input type="radio" id="aanhef-dhr" name="aanhef" value="Dhr." checked />
+      <label for="aanhef-dhr">Dhr.</label>
+
+      <input type="radio" id="aanhef-mevr" name="aanhef" value="Mevr." />
+      <label for="aanhef-mevr">Mevr.</label>
+
+      <br />
+    </fieldset>
+
+    <br />
+
+    <fieldset>
+      <legend>Adres</legend>
+
+      <label for="straat">Straat met huisnummer</label><br />
+      <input
+        id="straat"
+        name="straat"
+        type="text"
+        required
+        maxlength="100"
+        pattern="^[^\d].*\s\d+[A-Za-z]?$"
+        title="Voer straat en huisnummer in, bijvoorbeeld: 'Schiedamseweg 1' (huisnummer vereist)."
+        placeholder="Schiedamseweg 1"
+      />
+      <br /><br />
+
+      <label for="postcode">Postcode</label><br />
+      <input
+        id="postcode"
+        name="postcode"
+        type="text"
+        required
+        maxlength="7"
+        pattern="^[1-9][0-9]{3}\s?[A-Z]{2}$"
+        title="Postcode zoals 1234 AB."
+        placeholder="1234 AB"
+      />
+      <br /><br />
+
+      <label for="woonplaats">Woonplaats</label><br />
+      <input
+        id="woonplaats"
+        name="woonplaats"
+        type="text"
+        required
+        maxlength="80"
+        placeholder="Woonplaats"
+      />
+      <br /><br />
+
+      <label for="land">Land</label><br />
+      <input
+        id="land"
+        name="land"
+        type="text"
+        required
+        maxlength="56"
+        placeholder="Nederland"
+      />
+      <br />
+    </fieldset>
+
+    <br />
+
+    <fieldset>
+      <legend>Betaalgegevens</legend>
+
+      <label for="iban">IBAN-nummer</label><br />
+      <input
+        id="iban"
+        name="iban"
+        type="text"
+        required
+        minlength="18"
+        maxlength="18"
+        pattern="^NL\d{2}[A-Z]{4}\d{10}$"
+        title="IBAN moet beginnen met 'NL', daarna 2 cijfers, 4 hoofdletters en 10 cijfers (totaal 18 tekens). Bijvoorbeeld: NL12BANK0123456789"
+        placeholder="NL12BANK0123456789"
+        inputmode="text"
+      />
+      <br />
+    </fieldset>
+
+    <br />
+
+    <fieldset>
+      <legend>Abonnement</legend>
+
+      <label for="type-abonnement">Type abonnement</label><br />
+      <select id="type-abonnement" name="type-abonnement" required>
+        <option value="">-- Kies --</option>
+        <option value="Mobiel">Mobiel</option>
+        <option value="Glasvezel">Glasvezel</option>
+        <option value="TV">TV</option>
+      </select>
+      <br /><br />
+
+      <label for="startdatum">Datum start abonnement</label><br />
+      <input
+        id="startdatum"
+        name="startdatum"
+        type="date"
+        required
+        min="2025-10-03"
+        title="Ongeldige datum (in het verleden)"
+      />
+      <br /><br />
+
+      <label for="looptijd">Looptijd (maanden)</label><br />
+      <input
+        id="looptijd"
+        name="looptijd"
+        type="number"
+        required
+        min="1"
+        max="120"
+        step="1"
+        title="Looptijd in maanden (bv. 12)."
+        placeholder="12"
+      />
+      <br /><br />
+
+      <label for="aantal-gebruikers">Aantal gebruikers op het abonnement</label><br />
+      <input
+        id="aantal-gebruikers"
+        name="aantal-gebruikers"
+        type="number"
+        required
+        min="1"
+        max="4"
+        step="1"
+        title="Maximaal 4 gebruikers; geen onder de 0"
+        placeholder="1"
+      />
+      <br />
+    </fieldset>
+
+    <br />
+
+    <fieldset>
+      <legend>Contact & beveiliging</legend>
+
+      <label for="email">E-mailadres</label><br />
+      <input
+        id="email"
+        name="email"
+        type="email"
+        required
+        maxlength="254"
+        placeholder="naam@mail.nl"
+        title="Verplicht: e-mailadres voor communicatie."
+      />
+      <br /><br />
+
+      <label for="wachtwoord">Wachtwoord aanmaken</label><br />
+      <input
+        id="wachtwoord"
+        name="wachtwoord"
+        type="password"
+        required
+        minlength="8"
+        maxlength="128"
+        autocomplete="new-password"
+        placeholder="Maak een wachtwoord"
+        title="Wachtwoord niet zichtbaar tijdens het typen."
+      />
+      <br />
+    </fieldset>
+
+    <br />
+
+    <button type="submit">Sluit abonnement af</button>
+  </form>
+
+</body>
+</html>
