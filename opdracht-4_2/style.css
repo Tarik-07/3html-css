@@ -120,7 +120,7 @@ align-content: center;
 }
 
 .deal-badge {
-  position: fixed;
+  position: absolute;
   left: 1000px;
   top: 350px;
   background-color: #000;
