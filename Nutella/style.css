@@ -1,28 +1,21 @@
 Header{
-    font-size: 40px;
+  font-size: 40px;
 }
 
-a:first-of-type{
-    font-size: 35px;
-    text-decoration: none;
-    color: blueviolet;
-
-}
-a:last-of-type{
-font-size: 35px;
-text-decoration: none;
-color: blueviolet; 
+a{
+  font-size: 35px;
+  text-decoration: none;
+  color: blueviolet
 }
 
 head{
-    font-size: 50px;
+  font-size: 50px;
 }
 
 p:first-of-type{
-    font-size: 35px;
+  font-size: 35px;
 }
 
 img{
-    height: 150px;
-    width: 150px;
+height: 150px;
 }
