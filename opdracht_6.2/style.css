@@ -1,0 +1,26 @@
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.blok {
+  width: 150px;
+  height: 150px;
+}
+
+.blauw {
+    height: 200px;
+    width: 200px; background: blue; }
+
+.zwart  { 
+    height: 200px;
+    width: 200px; background: black; }
+
+.rood  { 
+    height: 200px;
+    width: 200px; background: red; }
+.groen { 
+    height: 200px;
+    width: 200px; background: green; }
+
