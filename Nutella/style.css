@@ -1,5 +1,5 @@
-body {
-  background-color: #6d712e;
+Body{
+background-color: green;
 }
 
 Header{
@@ -8,28 +8,38 @@ Header{
 
 a{
   font-size: 35px;
-  text-decoration: none;
-  color: blueviolet
+ color: rgb(0, 0, 0)
 }
 
-head{
+
+head {
   font-size: 50px;
   
 }
 
-p:first-of-type{
+p:first-of-type {
   font-size: 35px;
+
 }
 
 img{
 height: 150px;
 }
 
+.top-right-img {
+  position: fixed;
+  top: 135px;
+  right: 10px;
+  width: 287px;     
+  height: auto;
+  
+}
+
 ul {
-    list-style-type: none;
-    margin: 50px;
-    padding: 5px;
-    background-color: #333;
-    display: flex;
-    justify-content: space-evenly;
+  list-style-type: none;
+  margin:50px;
+  padding: 5px;
+  background-color: #2a4827;
+  display: flex;
+  justify-content: space-evenly;
 }
