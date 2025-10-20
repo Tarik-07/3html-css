@@ -25,3 +25,123 @@ nav a {
   text-decoration: none;
   cursor: pointer;
 }
+
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #111;
+  line-height: 1.6;
+}
+
+/* Hero section */
+.hero {
+  background: #000;
+  color: #fff;
+  padding: 120px 10%;
+  text-align: left;
+}
+
+.hero h1 {
+  font-size: 72px;
+  margin-bottom: 30px;
+}
+
+.hero .buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-purple {
+  background: #9000ff;
+  color: #fff;
+}
+
+.btn-black {
+  background: #111;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+/* Tweede sectie */
+.features {
+  background: #f5f7fa;
+  padding: 80px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.features-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.features-text h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.features-text p {
+  margin-bottom: 20px;
+}
+
+.features-text ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.features-img {
+  flex: 1;
+  min-width: 300px;
+}
+
+.features-img img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border: 1px solid #ddd;
+}
+
+.features .btn-purple {
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  background: #9000ff;
+  color: #fff;
+  text-align: center;
+  padding: 40px 10%;
+}
+
+.footer-links {
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+}
+
+.store-links img {
+  height: 40px;
+  margin: 0 8px;
+  vertical-align: middle;
+}
