@@ -1,4 +1,27 @@
+/* Reset & basis */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-text-decoration: none;
-font: bolder;
+  font-family: sans-serif;
+}
+
+/* Navigatiebalk */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background: #5b2ff5;
+  padding: 1rem;
+}
+
+/* Links */
+nav a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
 }
