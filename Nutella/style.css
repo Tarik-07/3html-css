@@ -1,5 +1,5 @@
 Body{
-background-color: green;
+background-color: white;
 }
 
 Header{
@@ -18,7 +18,7 @@ head {
 }
 
 p:first-of-type {
-  font-size: 115px;
+  font-size: 90px;
 
 }
 
@@ -27,10 +27,10 @@ height: 125px;
 }
 
 .top-right-img {
-  position: fixed;
+  position: absolute;
   top: 135px;
   right: 10px;
-  width: 287px;     
+  width: 400px;     
   height: auto;
   
 }
@@ -39,7 +39,31 @@ ul {
   list-style-type: none;
   margin:50px;
   padding: 5px;
-  background-color: #2a4827;
+  background-color: black;
   display: flex;
   justify-content: space-evenly;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
 }
