@@ -1,6 +1,13 @@
-Body{
-background-color: white;
+body {
+  background-color: #0F3F3A; /* deep base green */
+  background-image: 
+    linear-gradient(145deg, rgba(20, 60, 52, 0.9), rgba(10, 30, 25, 0.95));
+  color: #E6F4ED; /* soft near-white text */
+  font-family: "Inter", sans-serif;
 }
+
+
+
 
 Header{
   font-size: 40px;
@@ -30,8 +37,8 @@ height: 125px;
   position: absolute;
   top: 135px;
   right: 10px;
-  width: 400px;     
-  height: auto;
+  width: 680px;     
+  height: 480px;
   
 }
 
