@@ -1,77 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ouderavond TCR | 20 November 2025</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ouderavond TCR | 20 November 2025</title>
+	<link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-  <header>
+  <header class="site-header">
+    <a class="logo" href="home.html"><img src="newpngtcr.png" alt="Techniek College Rotterdam logo"></a>
+    <nav>
+      <ul>
+        <li><a href="opleiding.html">Opleiding</a></li>
+        <li><a href="eduarte.html">Eduarte</a></li>
+        <li><a href="canvas.html">Canvas</a></li>
+        <li class="dropdown">
+          <a href="inhoud.html">Inhoud ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="tarik.html">Tarik</a></li>
+            <li><a href="senna.html">Senna</a></li>
+          </ul>
+        </li>
+        <li><a href="formulier.html">Formulier</a></li>
+        <li><a href="bsa.html">BSA</a></li>
+        <li><a href="documentatie.html">Documentatie</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<ul>
-  <img src="newpngtcr.png" alt="Schermafbeelding"> 
- 
+<main class="main">
+    <h1>Ouderavond — Aanmeldformulier</h1>
+    <p>Responsief tabel.</p>
 
-  <li><a href="opleiding.html">Opleiding</a></li>
-  <li><a href="eduarte.html">Eduarte</a></li>
-  <li><a href="canvas.html">Canvas</a></li>
+    <form action="home.html" method="get" class="form panel">
+      <label for="naam">Naam (verplicht):
+        <input id="naam" name="naam" type="text" required>
+      </label>
 
-  <li class="dropdown">
-    <a href="introductie.html">Introductie ▾</a>
-    <ul class="dropdown-content">
-      <li><a href="tarik.html">Tarik</a></li>
-      <li><a href="senna.html">Senna</a></li>
-    </ul>
-  </li>
+      <label for="geboortedatum">Geboortedatum (niet verplicht):
+        <input id="geboortedatum" name="geboortedatum" type="date">
+      </label>
 
-  <li><a href="formulier.html">Formulier</a></li>
-  <li><a href="index7.html">7</a></li>
-  <li><a href="documentatie.html">Documentatie</a></li>
-</ul>
+      <fieldset>
+        <legend>Dagen met meer dan 4 uren les / werk (niet verplicht)</legend>
+        <label><input type="checkbox" name="dagen[]" value="maandag"> Maandag</label><br>
+        <label><input type="checkbox" name="dagen[]" value="dinsdag"> Dinsdag</label><br>
+        <label><input type="checkbox" name="dagen[]" value="woensdag"> Woensdag</label><br>
+        <label><input type="checkbox" name="dagen[]" value="donderdag"> Donderdag</label><br>
+        <label><input type="checkbox" name="dagen[]" value="vrijdag"> Vrijdag</label><br>
+        <label><input type="checkbox" name="dagen[]" value="zaterdag"> Zaterdag</label><br>
+        <label><input type="checkbox" name="dagen[]" value="zondag"> Zondag</label>
+      </fieldset>
 
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Inschrijfformulier</title>
-</head>
-<body>
-  <form action="index.html" method="get" aria-label="Aanmeldformulier">
+      <label for="email">Email (verplicht):
+        <input id="email" name="email" type="email" required>
+      </label>
 
-    <small><label for="naam">Naam</label></small>
-    <input type="text" size="40" id="naam" name="naam" placeholder="Voor- en achternaam" required><br><br>
-
-    <small><label for="geboortedatum">Geboortedatum</label></small>
-    <input type="date" size="40" id="geboortedatum" name="geboortedatum" placeholder="jjjj-mm-dd"><br><br>
-
-    <fieldset>
-      <small><legend>Dagen met meer dan 4 uur les / werk (optioneel)</legend></small>
-      <label><input type="checkbox" name="dagen[]" value="maandag"> Maandag</label><br>
-      <label><input type="checkbox" name="dagen[]" value="dinsdag"> Dinsdag</label><br>
-      <label><input type="checkbox" name="dagen[]" value="woensdag"> Woensdag</label><br>
-      <label><input type="checkbox" name="dagen[]" value="donderdag"> Donderdag</label><br>
-      <label><input type="checkbox" name="dagen[]" value="vrijdag"> Vrijdag</label><br>
-      <label><input type="checkbox" name="dagen[]" value="zaterdag"> Zaterdag</label><br>
-      <label><input type="checkbox" name="dagen[]" value="zondag"> Zondag</label><br>
-    </fieldset><br><br>
-
-    <small><label for="email">E-mail</label></small>
-    <input type="email" size="40" id="email" name="email" placeholder="naam@voorbeeld.nl" required><br><br>
-
-    <small><label for="wachtwoord">Wachtwoord</label></small>
-    <input type="password" size="40" id="wachtwoord" name="wachtwoord" placeholder="Kies een wachtwoord" required><br><br>
-
-    <input type="submit" value="Verstuur">
-  </form>
-</body>
-</html>
-
+      <label for="wachtwoord">Wachtwoord (verplicht):
+        <input id="wachtwoord" name="wachtwoord" type="password" required>
+      </label>
+        
+      <button type="submit" class="btn">Verstuur</button>
+    </form>
+  </main>
 
 </body>
-</html>
-
-</header>
-    </body>
 </html>
